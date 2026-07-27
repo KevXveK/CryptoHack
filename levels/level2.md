@@ -1,8 +1,8 @@
 # Level 2 — Hex
 
-**Categoria General.** String em hexadecimal pra converter direto pra texto.
+**General category.** A hex string to convert straight into text.
 
-## O que fiz
+## What I did
 
 ```python
 codigo = '63727970746f7b596f755f77696c6c5f62655f776f726b696e675f776974685f6865785f737472696e67735f615f6c6f747d'
@@ -15,8 +15,8 @@ resultadoo = converte_hex(codigo)
 print(resultadoo)
 ```
 
-Saída: `crypto{You_will_be_working_with_hex_strings_a_lot}`
+Output: `crypto{You_will_be_working_with_hex_strings_a_lot}`
 
-## Conclusão
+## Takeaway
 
-`bytes.fromhex()` faz o trabalho todo — cada par de dígitos hex vira um byte, e como o texto original é ASCII o resultado já sai legível. Bem mais direto que montar um dicionário na mão como nos níveis anteriores.
+`bytes.fromhex()` does all the work — each pair of hex digits becomes a byte, and since the original text is ASCII the result comes out readable. Much more direct than building a dictionary by hand like the earlier levels.

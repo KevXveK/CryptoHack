@@ -1,8 +1,8 @@
 # Level 1 — ASCII
 
-**Categoria General.** Recebi uma lista de códigos ASCII e precisava juntar em texto pra achar a flag.
+**General category.** Given a list of ASCII codes, needed to join them into text to get the flag.
 
-## O que fiz
+## What I did
 
 ```python
 lista = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
@@ -15,8 +15,8 @@ resultado = converte_ascii(lista)
 print(resultado)
 ```
 
-Saída: `crypto{ASCII_pr1nt4bl3}`
+Output: `crypto{ASCII_pr1nt4bl3}`
 
-## Conclusão
+## Takeaway
 
-`chr()` em cada número da lista e junta tudo. É o mesmo raciocínio do morse do nível 0, só que a "tabela" já é a tabela ASCII padrão em vez de uma que eu inventei.
+`chr()` on each number in the list, then join. Same reasoning as level 0's Morse, except the "table" here is just the standard ASCII table instead of one I made up.

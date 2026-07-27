@@ -1,8 +1,8 @@
 # Level 3 — Hex → Base64
 
-**Treino, não é o hex oficial do CryptoHack** (esse aqui não decodifica pra um texto legível — é só pra praticar a conversão binário → base64 antes do nível 4).
+**Drill, not the official CryptoHack Base64 challenge** (this one doesn't decode into readable text — just practicing the binary → base64 conversion before level 4).
 
-## O que fiz
+## What I did
 
 ```python
 import base64
@@ -18,10 +18,10 @@ imprimir, hexx = convertbase64(codigohex)
 print(imprimir)
 ```
 
-Saída: `b'crypto/Base+64+Encoding+is+Web+Safe/'`
+Output: `b'crypto/Base+64+Encoding+is+Web+Safe/'`
 
-Os bytes crus não formam texto (é lixo binário mesmo), mas por coincidência o base64 resultante caiu formando uma frase legível — engraçado de ver, mas não é uma flag de verdade, só o efeito colateral do alfabeto do base64.
+The raw bytes don't form text (it's genuine binary junk), but the resulting base64 happened to spell out a readable phrase — funny to see, but not a real flag, just a side effect of the base64 alphabet.
 
-## Conclusão
+## Takeaway
 
-`bytes.fromhex()` pra sair do hex, `base64.b64encode()` pra entrar no base64. Mesma lógica de sempre: um formato intermediário (bytes) conectando as duas pontas.
+`bytes.fromhex()` to get out of hex, `base64.b64encode()` to get into base64. Same logic as always: an intermediate format (bytes) bridging the two ends.

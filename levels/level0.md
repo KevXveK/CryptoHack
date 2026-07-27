@@ -1,8 +1,8 @@
 # Level 0 — Morse
 
-**Não é um nível oficial do CryptoHack** — fiz esse conversor antes de começar a categoria General, só pra treinar a ideia de "tabela de codificação = dicionário" antes de mexer com ASCII/hex de verdade.
+**Not an official CryptoHack level** — I built this converter before starting the General category, just to practice the "encoding table = dictionary" idea before touching real ASCII/hex.
 
-## O que fiz
+## What I did
 
 ```python
 def morse():
@@ -19,15 +19,15 @@ def morse():
         '9': '----.', '0': '-----', ' ': '/'
     }
     traducao = []
-    escolha = int(input('Digite 1 para traduzir texto para morse ou 2 para morse para texto'))
+    escolha = int(input('Type 1 to translate text to Morse or 2 for Morse to text'))
     if escolha == 1:
-        texto = input('Digite o texto').upper()
+        texto = input('Enter the text').upper()
         for letra in texto:
             if letra in dicionario:
                 traducao.append(dicionario[letra])
         return ' '.join(traducao)
     else:
-        texto = input('Digite o codigo cifrado').split()
+        texto = input('Enter the encoded text').split()
         for caracter in texto:
             for chave, valor in dicionario.items():
                 if caracter == valor:
@@ -35,8 +35,8 @@ def morse():
         return ' '.join(traducao)
 ```
 
-Testando com "SOS": `... --- ...`. Nada sofisticado, só um dicionário letra → código e o inverso pra decodificar.
+Tested with "SOS": `... --- ...`. Nothing fancy, just a letter → code dictionary and its reverse for decoding.
 
-## Conclusão
+## Takeaway
 
-Serviu pra fixar o padrão que vou repetir nos próximos níveis: toda codificação simples é basicamente um dicionário de mão única, e decodificar é só inverter a busca.
+This set the pattern I'll repeat in the next levels: any simple encoding is basically a one-way dictionary, and decoding is just reversing the lookup.
